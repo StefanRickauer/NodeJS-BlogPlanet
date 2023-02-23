@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/home"><img src="<%=logoRef%>" alt="Blog Planet Logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <!-- d-block d-lg-none: nicht sichtbar auf Bildschirmen > 992px, weil es bis dahin in der Sidebar ist -->
+          <a class="nav-link d-block d-lg-none" href="/create">Neuer Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-block d-lg-none" href="/collection/<%=author%>">Meine Blogs</a>
+        </li>
+      </ul>
+      <a href="/logout">
+        <img id="logout-btn" src="<%=btnRef%>" alt="Logout">
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div id="site-content" class="container-fluid">
+  <div class="row justify-content-end">
+    <div class="col-md-2 d-none d-lg-block sidebar">
+      <!-- Sidebar -->
+      <ul class="nav flex-column">
+        <li>
+          <a class="nav-link" href="/create">Neuer Blog</a>
+        </li>
+        <li>
+          <a class="nav-link" href="/collection/<%=author%>">Meine Blogs</a>
+        </li>
+      </ul>
+    </div>

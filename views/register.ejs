@@ -1,0 +1,34 @@
+<%- include("partials/header.ejs", {pageTitle: pageTitle, favRef: favRef, bootstrapCssRef: bootstrapCssRef, cssRef: cssRef}) %>
+
+<div class="container">
+  <div class="row row-cols-lg-2 row-cols-md-1 align-items-center justify-content-center min-vh-100 ">
+    <div class="bg-form">
+      <h1>Registrierung</h1>
+      <p>Werde Teil der Community.</p>
+      <form class="" action="/register" method="post">
+        <div class="form-group">
+          <label for="reg-fname">Vorname</label>
+          <input type="text" id="reg-fname" class="form-control" placeholder="Vorname hier eingeben" name="fname" required>
+        </div>
+        <div class="form-group">
+          <label for="reg-lname">Nachname</label>
+          <input type="text" id="reg-lname" class="form-control" placeholder="Nachname hier eingeben" name="lname" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control" placeholder="Email hier eingeben" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="passwd">Passwort</label>
+          <input type="password" id="passwd" class="form-control" placeholder="Passwort hier eingeben" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-lg float-end">Registrieren</button>
+      </form>
+      <p class="login">
+        Du hast bereits einen Account? <a href="/login">Anmelden</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<%- include("partials/footer.ejs", {bootstrapJsRef: bootstrapJsRef}) %>

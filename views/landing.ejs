@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs", {pageTitle: pageTitle, favRef: favRef, bootstrapCssRef: bootstrapCssRef, cssRef: cssRef}) %>
+
+<div class="container-fluid">
+  <img src="images/BlogPlanet_Logo-md.png" alt="Logo BlogPlanet" class="logo">
+  <h1>BlogPlanet ist eine Plattform zum Veröffentlichen<br />
+    und Lesen von Blogbeiträgen.</h1>
+  <div class="row">
+    <div class="col-lg-6">
+      <h2>Starte deinen eigenen Blog und werde Teil der Community.</h2>
+      <a class="btn btn-lg" href="/register" role="button">Registrierung</a>
+      <h4>Du bist bereits registriert?</h4>
+      <a class="btn btn-lg" href="/login" role="button">Anmeldung</a>
+    </div>
+    <div class="col-lg-6 d-none d-xl-block">
+      <img src="images/earth-flat.png" alt="Erde" class="img-earth">
+    </div>
+  </div>
+</div>
+
+<%- include("partials/footer.ejs", {bootstrapJsRef: bootstrapJsRef}) %>

@@ -1,0 +1,92 @@
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Barlow-Condensed;
+  src: url("../fonts/BarlowCondensed-Regular.ttf") format("truetype");
+}
+
+body {
+  background-color: #2b2e36;
+  color: white;
+}
+
+h1 {
+  color: #5a9285;
+  font-family: "Roboto-Bold";
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+p, label, button {
+  font-family: "Roboto";
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+p {
+  color: #5a9285;
+  font-size: 20px;
+}
+
+a {
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5a9285;
+}
+
+.form-control {
+  margin-bottom: 3%;
+}
+
+.form-control:focus {
+  border-color: #5a9285;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.06) inset, 0px 0px 9px rgba(90, 146, 133, 0.8);
+}
+
+.bg-form {
+  background-color: #5b585a;
+  border-radius: 25px;
+  padding: 2%;
+}
+
+.btn {
+  background-color: #5a9285;
+  color: white;
+  font-family: "Roboto";
+  font-weight: 400;
+  margin: 2% 0;
+  width: 150px;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #2b2e36;
+  font-weight: 700;
+}
+
+.login, .register {
+  margin-top: 7%;
+  font-size: 1rem;
+}
+
+#heading-login {
+  margin-bottom: 40px;
+}

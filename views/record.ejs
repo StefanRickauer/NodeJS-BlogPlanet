@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs", {pageTitle: pageTitle, favRef: favRef, bootstrapCssRef: bootstrapCssRef, cssRef: cssRef}) %>
+<%- include("partials/navigation.ejs", {author: author, logoRef: logoRef, btnRef: btnRef}) %>
+
+    <div class="col-lg-10 container-blogs">
+      <div class="row">
+        <div class="preview-container">
+          <div class="preview-box">
+            <h1><%=requestedEntry.title%></h1>
+            <small>Von <%=requestedEntry.authorName%></small>
+            <p><%=requestedEntry.text%></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<%- include("partials/footer.ejs", {bootstrapJsRef: bootstrapJsRef}) %>

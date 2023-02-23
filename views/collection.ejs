@@ -1,0 +1,35 @@
+<%- include("partials/header.ejs", {pageTitle: pageTitle, favRef: favRef, bootstrapCssRef: bootstrapCssRef, cssRef: cssRef}) %>
+<%- include("partials/navigation.ejs", {author: author, logoRef: logoRef, btnRef: btnRef}) %>
+
+    <div class="col-lg-10 container-blogs">
+      <h1>Meine Blogbeiträge</h1>
+      <hr>
+      <div class="row">
+
+        <!-- Iteriere über sämtliche Einträge in umgekehrter Reihenfolge => schreibe neueste ganz oben -->
+        <% authorEntries.reverse().forEach( (entry) => { %>
+        <div class="col-lg-12 col-xl-4 preview-container">
+          <div class="preview-box">
+            <h2><%=entry.title%></h2>
+            <small>Von <%=entry.authorName%></small>
+            <!-- Wenn Blogpost länger als 620 Zeichen, gib nur die ersten 620 Zeichen und "..." aus-->
+            <% if(entry.text.length > 620) { %>
+            <p><%=entry.text.substring(0, 620) + "..."%></p>
+            <% } else { %>
+            <!-- ansonsten alles -->
+            <p><%=entry.text%></p>
+            <% } %>
+
+            <a class="btn float-start delete-btn" href="/delete/<%=entry._id%>">Löschen</a>
+            <a class="btn float-end edit-btn" href="/edit/<%=entry._id%>">Bearbeiten</a>
+          </div>
+        </div>
+        <% }) %>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<%- include("partials/footer.ejs", {bootstrapJsRef: bootstrapJsRef}) %>
