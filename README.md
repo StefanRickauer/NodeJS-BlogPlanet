@@ -1,5 +1,5 @@
 # NodeJS-BlogPlanet
-Web application for blog posts, including account management and database connection.
+Web application for blog posts, including login functionality and database connection.
 
 In order for the web application to work, add a folder named ".env" in the root directory of this project. 
 The ".env"-file must contain the following constants (add values => no quotation marks, no spaces):
